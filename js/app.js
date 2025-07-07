@@ -749,7 +749,7 @@ async function search() {
             const hasCover = item.vod_pic && item.vod_pic.startsWith('http');
 
             return `
-                <div class="card-hover bg-[#111] rounded-lg overflow-hidden cursor-pointer transition-all hover:scale-[1.02] h-full shadow-sm hover:shadow-md" 
+                <button class="card-hover bg-[#111] rounded-lg overflow-hidden cursor-pointer transition-all hover:scale-[1.02] h-full shadow-sm hover:shadow-md" 
                      onclick="showDetails('${safeId}','${safeName}','${sourceCode}')" ${apiUrlAttr}>
                     <div class="flex h-full">
                         ${hasCover ? `
